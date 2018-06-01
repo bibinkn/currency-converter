@@ -29,7 +29,6 @@ export class ConvertAppComponent implements OnInit {
             if (response.rates) {
                 if (initial) {
                     const items: Array<any> = this.parseData(response.rates);
-                    console.log("items=>", items);
                     items.push({ id: 'EUR', value: 1 });
                     let newCurrList = [
                         {
